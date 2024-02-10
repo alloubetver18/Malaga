@@ -1,0 +1,46 @@
+{
+  "lugares": [
+    {
+      "id": 1,
+      "name": "Lugar numero uno",
+      "description": "Descripcion escueta del lugar uno",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "link": "nombre-lugar"
+    },
+    {
+      "id": 2,
+      "name": "Lugar numero uno",
+      "description": "Descripcion escueta del lugar uno",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "link": "nombre-lugar"
+    },
+    {
+      "id": 3,
+      "name": "Lugar numero uno",
+      "description": "Descripcion escueta del lugar uno",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "link": "nombre-lugar"
+    },
+    {
+      "id": 4,
+      "name": "Lugar numero uno",
+      "description": "Descripcion escueta del lugar uno",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "link": "nombre-lugar"
+    },
+    {
+      "id": 5,
+      "name": "Lugar numero uno",
+      "description": "Descripcion escueta del lugar uno",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "link": "nombre-lugar"
+    },
+    {
+      "id": 6,
+      "name": "Lugar numero uno",
+      "description": "Descripcion escueta del lugar uno",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "link": "nombre-lugar"
+    }
+  ]
+}

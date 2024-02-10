@@ -1,0 +1,27 @@
+mat-grid-list, #info{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+h1{
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#info{
+  padding-bottom: 5rem;
+}
+
+.min{
+  filter: brightness(80%);
+  transition: filter 0.5s ease;
+}
+
+.min:hover{
+  filter: brightness(100%);
+}
+
