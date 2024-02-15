@@ -3,6 +3,9 @@ mat-grid-list, #info{
   margin: auto;
   margin-bottom: 2rem;
 }
+mat-grid-tile.min{
+  background-size: cover;
+}
 h1{
   display: block;
   width: 80%;
@@ -19,9 +22,15 @@ h1{
 .min{
   filter: brightness(80%);
   transition: filter 0.5s ease;
+  background-size: cover;
 }
 
 .min:hover{
   filter: brightness(100%);
+  cursor: pointer;
+}
+
+#parrafo{
+  white-space: pre-line;
 }
 

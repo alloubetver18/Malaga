@@ -1,69 +1,66 @@
-<h1>Información del lugar seleccionado.</h1>
+<main *ngIf="placeInfo">
+  <h1>{{ placeInfo.name }}</h1>
 
-<mat-grid-list cols="12" rowHeight="100px">
-  <!-- Columna 1: Imagen grande -->
-  <mat-grid-tile
-    colspan="6"
-    rowspan="4"
-    style="
-      background: url('https://material.angular.io/assets/img/examples/shiba2.jpg');
-      background-size: cover;
-    "
-  >
-  </mat-grid-tile>
+  <mat-grid-list cols="12" rowHeight="100px">
+    <!-- Columna 1: Imagen grande -->
+    <mat-grid-tile
+      id="img-grande"
+      colspan="6"
+      rowspan="4"
+      [style.background]="
+        'url(' + placeInfo.images[0] + ') no-repeat center center / cover'
+      "
+    >
+    </mat-grid-tile>
 
-  <!-- Columna 2: Dos imágenes pequeñas -->
-  <mat-grid-tile
-    class="min"
-    colspan="3"
-    rowspan="2"
-    style="
-      background: url('https://material.angular.io/assets/img/examples/shiba2.jpg');
-      background-size: cover;
-    "
-  >
-  </mat-grid-tile>
-  <mat-grid-tile
-    class="min"
-    colspan="3"
-    rowspan="2"
-    style="
-      background: url('https://material.angular.io/assets/img/examples/shiba2.jpg');
-      background-size: cover;
-    "
-  >
-  </mat-grid-tile>
+    <!-- Columna 2: Dos imágenes pequeñas -->
+    <mat-grid-tile
+      class="min"
+      colspan="3"
+      rowspan="2"
+      [style.background]="
+        'url(' + placeInfo.images[0] + ') no-repeat center center / cover'
+      "
+      (click)="cambiarImagen(0)"
+    >
+    </mat-grid-tile>
+    <mat-grid-tile
+      class="min"
+      colspan="3"
+      rowspan="2"
+      [style.background]="
+        'url(' + placeInfo.images[1] + ') no-repeat center center / cover'
+      "
+      (click)="cambiarImagen(1)"
+    >
+    </mat-grid-tile>
 
-  <!-- Columna 3: Dos imágenes pequeñas -->
-  <mat-grid-tile
-    class="min"
-    colspan="3"
-    rowspan="2"
-    style="
-      background: url('https://material.angular.io/assets/img/examples/shiba2.jpg');
-      background-size: cover;
-    "
-  >
-  </mat-grid-tile>
-  <mat-grid-tile
-    class="min"
-    colspan="3"
-    rowspan="2"
-    style="
-      background: url('https://material.angular.io/assets/img/examples/shiba2.jpg');
-      background-size: cover;
-    "
-  >
-  </mat-grid-tile>
-</mat-grid-list>
+    <!-- Columna 3: Dos imágenes pequeñas -->
+    <mat-grid-tile
+      class="min"
+      colspan="3"
+      rowspan="2"
+      [style.background]="
+        'url(' + placeInfo.images[2] + ') no-repeat center center / cover'
+      "
+      (click)="cambiarImagen(2)"
+    >
+    </mat-grid-tile>
+    <mat-grid-tile
+      class="min"
+      colspan="3"
+      rowspan="2"
+      [style.background]="
+        'url(' + placeInfo.images[3] + ') no-repeat center center / cover'
+      "
+      (click)="cambiarImagen(3)"
+    >
+    </mat-grid-tile>
+  </mat-grid-list>
 
-<section id="info">
-  <h2>Acerca de este lugar</h2>
+  <section id="info">
+    <h2>Acerca de este lugar</h2>
 
-  <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi sint
-    veniam unde nostrum cum optio quos fugit culpa est? Expedita consequatur
-    consequuntur quibusdam maiores, sequi nihil ea exercitationem vero commodi
-    cum accusantium, dolorum, ex adipisci eaque laboriosam laborum. Iure, enim!
-  </p>
-</section>
+    <p id="parrafo">{{ placeInfo.resumen }}</p>
+  </section>
+</main>
