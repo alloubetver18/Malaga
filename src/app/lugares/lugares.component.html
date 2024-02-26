@@ -11,15 +11,18 @@
     />
     <mat-card-content>
       <p>
-        {{ place.description }}
+        {{ obtenerPrimeras50Palabras(place.resumen) }}
       </p>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button [routerLink]="['/lugares/', place.id]">
         <mat-icon>add</mat-icon> Leer mas
       </button>
-      <button mat-button>
-        <mat-icon>star</mat-icon> {{ place.valoracion }}
+      <button mat-button *ngIf="place.valoracion > 0">
+        <mat-icon class="color-valorar">star</mat-icon> {{ place.valoracion }}
+      </button>
+      <button mat-button *ngIf="place.valoracion == 0">
+        <mat-icon class="color-no-valorado">star</mat-icon> NV
       </button>
     </mat-card-actions>
   </mat-card>

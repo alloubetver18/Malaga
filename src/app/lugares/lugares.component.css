@@ -3,13 +3,8 @@
 }
  img{
   width: 100%;
-  height: 60%;
+  height: 292px;
  }
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
 
 .gallery{
   display: flex;
@@ -19,6 +14,10 @@
   margin: auto;
   width: fit-content;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+mat-card-content{
+  height: 150px;
 }
 
 mat-card-actions{
@@ -33,4 +32,12 @@ mat-card-header{
 mat-card{
   justify-content: space-between;
   gap: 1rem;
+}
+
+.color-valorar{
+  color: yellow;
+}
+
+.color-no-valorado{
+  color: grey;
 }
