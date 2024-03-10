@@ -2,4 +2,19 @@
   <span>Málaga</span>
   <span class="nav_spacer"></span>
   <button mat-button routerLink="lugares">Lugares de Interes</button>
+  <button mat-button routerLink="login" *ngIf="!logged">Login</button>
+  <button mat-button routerLink="registro" *ngIf="!logged">Registro</button>
+  <button mat-button routerLink="administrar-lugares" *ngIf="isAdmin">
+    Administrar Lugares
+  </button>
+
+  <button
+    mat-raised-button
+    color="accent"
+    routerLink="login"
+    *ngIf="logged"
+    (click)="logOut()"
+  >
+    Salir({{ userName }})
+  </button>
 </mat-toolbar>

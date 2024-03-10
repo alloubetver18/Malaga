@@ -70,6 +70,4 @@ export class LugaresComponent {
       return cadena;
     }
   }
-
-  obtenerValoracionMedia(Places: PlaceModel[]) {}
 }

@@ -1,14 +1,15 @@
 export class UserModel {
   constructor(
-    public id: number,
+    public email: string,
     public firstName: string,
     public lastName: string,
-    public province: string,
-    public gender: string,
-    public email: string,
-    public role: string,
-    public birthdate: Date,
+    public telefone: number,
     public passw: string,
-    public observations: string
+    public repeatpassw: string,
+    public birthdate: Date,
+    public gender: string,
+    public community: string,
+    public role: string,
+    public id: number
   ) {}
 }

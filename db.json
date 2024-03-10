@@ -3,63 +3,74 @@
     {
       "id": "catedral-malaga",
       "name": "La Catedral de Málaga",
-      "description": "Una de las joyas renacentistas más valiosas de Andalucía. Iniciada su construcción en el Siglo XVI, a dia de hoy su obra aún queda inconclusa.",
       "resumen": "La riqueza monumental de Málaga se manifiesta principalmente en su Catedral. Dedicada a la Encarnación, es una de las principales joyas del Renacimiento Español.\n\nLa historia de la Catedral está íntimamente relacionada con la Mezquita Mayor sobre la cual fue construida, emplazada en el interior del recinto amurallado árabe. Su origen se sitúa en 1487, año en el que la ciudad de Málaga fue conquistada por las tropas castellanas. Fue entonces cuando la Mezquita Aljama se convirtió en Catedral, vistiéndose de cristiana con elementos decorativos del gótico tardío y consagrándose bajo la advocación de Santa María de la Encarnación. Dicho misterio teológico nos habla de Dios hecho hombre y de la Encarnación en su Madre como paso esencial para la redención de nuestros pecados. Este mensaje definía de modo claro las intenciones religiosas del nuevo régimen establecido bajo el poder de los Reyes Católicos, muy devotos y seguidores de María en el momento del anuncio del Arcángel San Gabriel.\nEl proyecto original y las primeras trazas, hoy inexistentes, fueron obra del burgalés Diego de Siloé, autor de reconocido prestigio que proyectó su arquitectura en un gran número de monumentos de la época como el monasterio de San Jerónimo de Granada, La Sacra Capilla del Salvador de Úbeda o las catedrales de Granada y Guadix, entre otras.\n\nEn una primera fase se construyó sólo la cabecera mediante pilares con semicolumnas de capiteles corintios. Durante el siglo XVII las obras apenas avanzan, tan sólo se construiría el coro. El siglo XVIII sería definitivo para abordar el proceso final de la Catedral. Las obras se reanudan para terminar el cuerpo de la iglesia a base de grandes pilares con columnas de los que emergen nuevos pilares con pilastras adosadas, que soportan a su vez un entramado de cúpulas semiesféricas.\n\n“ Dedicada a la Encarnación, es una de las principales joyas del Renacimiento Español ”\n\nEn 1768 el templo catedralicio se abriría al culto tal y como lo conocemos hoy. Tan sólo faltaría por terminar las torres y el exorno de las capillas de la zona nueva. La invasión napoleónica y las sucesivas desamortizaciones después, impiden que las obras continúen a lo largo del siglo XIX. En 1862 la reina Isabel II visita Málaga e impulsa de nuevo la idea de concluir el templo, propósito que finalmente no se materializó.\n\nLa evolución de cada una de sus fases constructivas da como resultado este enorme templo, de compleja estructura y diversa gama de estilos, visible desde cualquier punto de la ciudad.",
-      "valoracion": 4.3,
+      "valoracion": 0,
       "images": [
-        "../../assets/img/1-1.jpg", "../../assets/img/1-2.jpg", "../../assets/img/1-3.jpg", "../../assets/img/1-4.jpg"],
-      "link": "catedral-malaga"
+        "../../assets/img/1-1.jpg",
+        "../../assets/img/1-2.jpg",
+        "../../assets/img/1-3.jpg",
+        "../../assets/img/1-4.jpg"
+      ]
     },
     {
       "id": "la-alacazaba",
       "name": "La Alcazaba",
-      "description": "Es una fortificación palaciega de la época islámica, construida sobre una anterior fortificación de origen fenicio-púnico.",
-      "resumen":"La Alcazaba de Málaga es una fortificación palaciega de la época islámica, construida sobre una anterior fortificación de origen fenicio-púnico1. Se encuentra en las faldas del monte Gibralfaro, en una posición elevada pero contigua y unida al centro histórico de la ciudad.\n\nFue construida entre los siglos XI y XV por los musulmanes2. Dentro de este recinto amurallado vivía el gobernador, los altos funcionarios de la ciudad y una guarnición de soldados2. La Alcazaba que se puede contemplar actualmente es el resultado de un largo proceso histórico que podría dividirse en cuatro etapas: el periodo andalusí, del siglo X al siglo XV; tras la Reconquista a finales del siglo XV hasta el siglo XVIII; el del abandono de su estructura militar y deterioro, que abarcaría el siglo XIX hasta los comienzos del siglo XX; y el de su recuperación como Monumento Histórico Artístico desde la década de 1930 hasta nuestros días.\n\nEl recinto de la Alcazaba parece que estuvo en buenas condiciones hasta el siglo XVII. Además de ser una construcción militar en su interior alberga jardines y estancias civiles, era como una pequeña ciudad amurallada dentro de la propia ciudad de Málaga.",
-      "valoracion": 4.8,
+      "resumen": "La Alcazaba de Málaga es una fortificación palaciega de la época islámica, construida sobre una anterior fortificación de origen fenicio-púnico1. Se encuentra en las faldas del monte Gibralfaro, en una posición elevada pero contigua y unida al centro histórico de la ciudad.\n\nFue construida entre los siglos XI y XV por los musulmanes2. Dentro de este recinto amurallado vivía el gobernador, los altos funcionarios de la ciudad y una guarnición de soldados2. La Alcazaba que se puede contemplar actualmente es el resultado de un largo proceso histórico que podría dividirse en cuatro etapas: el periodo andalusí, del siglo X al siglo XV; tras la Reconquista a finales del siglo XV hasta el siglo XVIII; el del abandono de su estructura militar y deterioro, que abarcaría el siglo XIX hasta los comienzos del siglo XX; y el de su recuperación como Monumento Histórico Artístico desde la década de 1930 hasta nuestros días.\n\nEl recinto de la Alcazaba parece que estuvo en buenas condiciones hasta el siglo XVII. Además de ser una construcción militar en su interior alberga jardines y estancias civiles, era como una pequeña ciudad amurallada dentro de la propia ciudad de Málaga.",
+      "valoracion": 0,
       "images": [
-        "../../assets/img/2-1.jpg", "../../assets/img/2-2.jpg", "../../assets/img/2-3.jpg", "../../assets/img/2-4.jpg"],
-      "link": "la-alacazaba"
+        "../../assets/img/2-1.jpg",
+        "../../assets/img/2-2.jpg",
+        "../../assets/img/2-3.jpg",
+        "../../assets/img/2-4.jpg"
+      ]
     },
     {
       "id": "el-teatro-romano",
       "name": "El Teatro Romano",
-      "description": "El monumento más antiguo de la ciudad y uno de los pocos restos de la presencia romana en Málaga.",
       "resumen": "El Teatro Romano de Málaga es uno de los vestigios más significativos de la época romana en la ciudad.\n\nEstá situado en el centro histórico de la ciudad, a los pies de la colina de la Alcazaba, y fue construido en el siglo I a.C. durante la época de Augusto.\n\nSu diseño corresponde a una construcción mixta que combina el aprovechamiento de la ladera del cerro para el graderío —al modo de los teatros griegos— con una importante construcción allí donde la roca es inexistente, creando el espacio necesario para las gradas.\n\nFue descubierto en 1951, y Su estrucutura consta de tres partes: cavea o graderío, orchestra o espacio semicircular entre graderío y escenario, y proscenium o escenario.\n\nEn la actualidad, es un enclave arqueológico cuya titularidad y gestión corresponde a la Junta de Andalucía. Está abierto al público de martes a domingo, y su visita se articula entre un centro de interpretación que se localiza anexo al teatro, y el yacimiento en cuestión cuyo recorrido es posible a través de unas pasarelas de madera.",
-      "valoracion": 4.9,
+      "valoracion": 0,
       "images": [
-        "../../assets/img/3-1.jpg", "../../assets/img/3-2.jpg", "../../assets/img/3-3.jpg", "../../assets/img/3-4.jpg"],
-      "link": "el-teatro-romano"
+        "../../assets/img/3-1.jpg",
+        "../../assets/img/3-2.jpg",
+        "../../assets/img/3-3.jpg",
+        "../../assets/img/3-4.jpg"
+      ]
     },
     {
       "id": "el-castillo-de-gibralfaro",
       "name": "El Castillo de Gibralfaro",
-      "description": "Este castillo se encuentra en una posición elevada, dominando la ciudad, y ofrece unas vistas espectaculares.",
       "resumen": "El Castillo de Gibralfaro es una fortaleza histórica situada en Málaga, España.\n\nEstá situado en una colina que domina la ciudad de Málaga. Fue construido en el siglo XIV por los árabes para albergar tropas y proteger la Alcazaba, que está ubicada en la ladera de la misma montaña.\n\nEl castillo está formado por dos murallas consecutivas y ocho torres. En su día, fue considerado la fortaleza más impenetrable de la Península Ibérica.\n\nEn la actualidad, el castillo es visitable y desde su punto más alto se pueden observar unas magníficas vistas de la ciudad de Málaga, y en días claros es posible divisar algunos montes de la cordillera del Rif (en África) y el estrecho de Gibraltar.",
-      "valoracion": 4.5,
+      "valoracion": 0,
       "images": [
-        "../../assets/img/4-1.jpg", "../../assets/img/4-2.jpg", "../../assets/img/4-3.jpg", "../../assets/img/4-4.jpg"],
-      "link": "el-castillo-de-gibralfaro"
+        "../../assets/img/4-1.jpg",
+        "../../assets/img/4-2.jpg",
+        "../../assets/img/4-3.jpg",
+        "../../assets/img/4-4.jpg"
+      ]
     },
-
     {
       "id": "el-museo-picasso",
       "name": "El Museo Picasso",
-      "description": "Málaga es la ciudad natal de Pablo Picasso y este museo alberga una extensa colección de sus obras.",
       "resumen": "El Museo Picasso Málaga (MPM) es uno de los dos museos dedicados a Pablo Picasso en su ciudad natal, Málaga.\n\nSe encuentra en el Palacio de Buenavista en el centro de Málaga. Fue inaugurado el 27 de octubre de 2003.\n\n La idea inicial del museo nació en 1953 de los contactos entre el propio Pablo Picasso y Juan Temboury Álvarez, entonces delegado provincial de Bellas Artes de Málaga.\n\nLa colección del museo está formada por la donación de Christine y Bernard Ruiz-Picasso, nuera y nieto del artista. La colección MPM abarca las innovaciones revolucionarias de Picasso, así como la amplia variedad de estilos, materiales y técnicas que dominó.\n\nEn 2023, el museo alcanzó la cifra de más de 779.000 visitantes, siendo el museo más visitado de Andalucía.",
-      "valoracion": 4.3,
+      "valoracion": 0,
       "images": [
-        "../../assets/img/5-1.jpg", "../../assets/img/5-2.jpg", "../../assets/img/5-3.jpg", "../../assets/img/5-4.jpg"],
-      "link": "el-museo-picasso"
+        "../../assets/img/5-1.jpg",
+        "../../assets/img/5-2.jpg",
+        "../../assets/img/5-3.jpg",
+        "../../assets/img/5-4.jpg"
+      ]
     },
     {
       "id": "la-calle-larios",
       "name": "La Calle Larios",
-      "description": "Es una de las principales calles comerciales de Málaga y un lugar perfecto para disfrutar del ambiente de la ciudad.",
       "resumen": "Se encuentra en el centro de Málaga, conectando la plaza de la Marina y la Alameda con el centro neurálgico de la ciudad: la Plaza de la Constitución.\n\nSu nombre oficial es Calle Marqués de Larios, en honor a Manuel Domingo Larios y Larios, II Marqués de Larios, quien preside el inicio de la calle1. Fue construida en el siglo XIX y ha sido siempre un punto de referencia en la vida social y económica de Málaga.\n\nLa calle Larios es conocida por su elegante arquitectura del siglo XIX, mostrando una variedad de fachadas hsitóricas debidamente conservadas, las cuales representan una mezcla de estilos arquitectónicos.\n\nEsta calle peatonal es el lugar perfecto para disfrutar de un paseo, ir de compras, y sumergirse en el vibrante ambiente urbano de Málaga. Se sitúan en ella las principales marcas de ropa del país y otras multinacionales.\n\nDurante eventos y festividades, la calle se transforma con decoraciones espectaculares. A destacar la iluminación especial que se instala durante las fiestas de Navidad.",
       "valoracion": 0,
       "images": [
-        "../../assets/img/6-1.jpg", "../../assets/img/6-2.jpg", "../../assets/img/6-3.jpg", "../../assets/img/6-4.jpg"],
-      "link": "la-calle-larios"
+        "../../assets/img/6-1.jpg",
+        "../../assets/img/6-2.jpg",
+        "../../assets/img/6-3.jpg",
+        "../../assets/img/6-4.jpg"
+      ]
     }
   ],
   "users": [
@@ -68,8 +79,8 @@
       "firstName": "Zen",
       "lastName": "Loubet Vergara",
       "telephone": "676584366",
-      "passw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJaZW4iLCJlbWFpbCI6InplbmxvdmVAZ21haWwuY29tIiwicGFzc3ciOiJ6ZW5sb3ZlIiwicm9sZSI6InVzdWFyaW8ifQ.5godu2Co_PEIViv2dPqoLY6LjPOd97jeDj72MzNY97U",
-      "repeatpassw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJaZW4iLCJlbWFpbCI6InplbmxvdmVAZ21haWwuY29tIiwicGFzc3ciOiJ6ZW5sb3ZlIiwicm9sZSI6InVzdWFyaW8ifQ.5godu2Co_PEIViv2dPqoLY6LjPOd97jeDj72MzNY97U",
+      "passw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJaZW4iLCJlbWFpbCI6InplbmxvdmVAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ6ZW5sb3ZlIiwicm9sZSI6InVzdWFyaW8ifQ.KlPIv77rfxtvsBGMnyzBV72urx-zRfo2IROitFyLtWw",
+      "repeatpassw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJaZW4iLCJlbWFpbCI6InplbmxvdmVAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ6ZW5sb3ZlIiwicm9sZSI6InVzdWFyaW8ifQ.KlPIv77rfxtvsBGMnyzBV72urx-zRfo2IROitFyLtWw",
       "birthdate": "1987-10-17T23:00:00.000Z",
       "gender": "1",
       "community": "Andalucía",
@@ -84,37 +95,99 @@
       "telephone": "660456699",
       "gender": "2",
       "community": "Galicia",
-      "passw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCZXJ0YSIsImVtYWlsIjoiYmVydGEuYmVsbG8uZGllZ3VlekBnbWFpbC5jb20iLCJwYXNzdyI6IkJlcnRhQmVsbG8iLCJyb2xlIjoiYWRtaW5pc3RyYWRvciJ9.VpulU-e5QBufjlZdpoVixSmfAD-QEat0l4S1pyK2yd8",
-      "repeatpassw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCZXJ0YSIsImVtYWlsIjoiYmVydGEuYmVsbG8uZGllZ3VlekBnbWFpbC5jb20iLCJwYXNzdyI6IkJlcnRhQmVsbG8iLCJyb2xlIjoiYWRtaW5pc3RyYWRvciJ9.VpulU-e5QBufjlZdpoVixSmfAD-QEat0l4S1pyK2yd8",
+      "passw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJCZXJ0YSIsImVtYWlsIjoiYmVydGEuYmVsbG8uZGllZ3VlekBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImJlcnRhYmVsbG8iLCJyb2xlIjoiYWRtaW5pc3RyYWRvciJ9.TfQCD9J24Li1A_FASaQWUdtjeC2RKEPsw6ovI1KHSPY",
+      "repeatpassw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJCZXJ0YSIsImVtYWlsIjoiYmVydGEuYmVsbG8uZGllZ3VlekBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImJlcnRhYmVsbG8iLCJyb2xlIjoiYWRtaW5pc3RyYWRvciJ9.TfQCD9J24Li1A_FASaQWUdtjeC2RKEPsw6ovI1KHSPY",
       "role": "administrador",
       "id": 4
+    },
+    {
+      "email": "joseluis@gmail.com",
+      "firstName": "JoseLuis",
+      "lastName": "Loubet Martinez",
+      "gender": "1",
+      "birthdate": "1950-12-05T23:00:00.000Z",
+      "passw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJKb3NlTHVpcyIsImVtYWlsIjoiam9zZWx1aXNAZ21haWwuY29tIiwicGFzc3dvcmQiOiJqb3NlbHVpcyIsInJvbGUiOiJ1c3VhcmlvIn0.swPf2-ltBdU-2dF7fMA2X5uniGzBeaHKaGj3HD-KteU",
+      "repeatpassw": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJKb3NlTHVpcyIsImVtYWlsIjoiam9zZWx1aXNAZ21haWwuY29tIiwicGFzc3dvcmQiOiJqb3NlbHVpcyIsInJvbGUiOiJ1c3VhcmlvIn0.swPf2-ltBdU-2dF7fMA2X5uniGzBeaHKaGj3HD-KteU",
+      "id": 5
     }
   ],
   "rating": [
     {
-      "id_user": 1,
+      "id": "zenlove@gmail.com&catedral-malaga",
+      "id_user": "zenlove@gmail.com",
       "id_place": "catedral-malaga",
-      "rate": 2.5
+      "rate": 2.5,
+      "comment": "Un lugar muy bonito, pero me gusta mas el modernismo"
     },
     {
-      "id_user": 1,
+      "id": "zenlove@gmail.com&la-alacazaba",
+      "id_user": "zenlove@gmail.com",
       "id_place": "la-alacazaba",
-      "rate": 2.4
+      "rate": 2.4,
+      "comment": "Un lugar muy bonito, pero me gusta mas el modernismo"
     },
     {
-      "id_user": 1,
+      "id": "zenlove@gmail.com&el-teatro-romano",
+      "id_user": "zenlove@gmail.com",
       "id_place": "el-teatro-romano",
-      "rate": 2.5
+      "rate": 2.5,
+      "comment": "Un lugar muy bonito, pero me gusta mas el modernismo"
     },
     {
-      "id_user": 1,
+      "id": "zenlove@gmail.com&el-castillo-de-gibralfaro",
+      "id_user": "zenlove@gmail.com",
       "id_place": "el-castillo-de-gibralfaro",
-      "rate": 2.7
+      "rate": 2.7,
+      "comment": "Un lugar muy bonito, pero me gusta mas el modernismo"
     },
     {
-      "id_user": 1,
+      "id": "zenlove@gmail.com&el-museo-picasso",
+      "id_user": "zenlove@gmail.com",
       "id_place": "el-museo-picasso",
-      "rate": 4.5
+      "rate": 4.5,
+      "comment": "Un lugar muy bonito"
+    },
+    {
+      "id": "zenlove@gmail.com&la-calle-larios",
+      "id_user": "zenlove@gmail.com",
+      "id_place": "la-calle-larios",
+      "rate": 3,
+      "comment": "Un lugar precioso, sobre todo en Navidad"
+    },
+    {
+      "id": "joseluis@gmail.com&catedral-malaga",
+      "id_user": "joseluis@gmail.com",
+      "id_place": "catedral-malaga",
+      "rate": 4,
+      "comment": "La catedral de Málaga es un monumento al renacentismo. Muy bonito."
+    },
+    {
+      "id": "joseluis@gmail.com&lugar-de-prueba",
+      "id_user": "joseluis@gmail.com",
+      "id_place": "lugar-de-prueba",
+      "rate": 4,
+      "comment": "La catedral de Málaga es un monumento al renacentismo. Muy bonito."
+    },
+    {
+      "id": "joseluis@gmail.com&la-alacazaba",
+      "id_user": "joseluis@gmail.com",
+      "id_place": "la-alacazaba",
+      "rate": 5,
+      "comment": "Es un lugar maravilloso, digno de la ciudad de Málaga."
+    },
+    {
+      "id": "joseluis@gmail.com&el-teatro-romano",
+      "id_user": "joseluis@gmail.com",
+      "id_place": "el-teatro-romano",
+      "rate": 4,
+      "comment": "Dejando un comentario de prueba"
+    },
+    {
+      "id": "joseluis@gmail.com&el-castillo-de-gibralfaro",
+      "id_user": "joseluis@gmail.com",
+      "id_place": "el-castillo-de-gibralfaro",
+      "rate": 5,
+      "comment": "Una fortaleza digna de Málaga."
     }
   ]
 }

@@ -1,4 +1,4 @@
-mat-grid-list, #info{
+mat-grid-list, #info, #valoraciones{
   width: 80%;
   margin: auto;
   margin-bottom: 2rem;
@@ -15,8 +15,12 @@ h1{
   margin-bottom: 2rem;
 }
 
-#info{
-  padding-bottom: 5rem;
+#info, #valoraciones{
+  padding-bottom: 2rem;
+}
+
+#observations{
+  resize: none;
 }
 
 .min{
@@ -34,7 +38,16 @@ h1{
   white-space: pre-line;
 }
 
-.color-valorar{
-  color: yellow;
+mat-form-field{
+  width: 100%;
 }
+
+.color-valorar{
+  color: goldenrod;
+}
+
+.color-no-valorado{
+  color: grey;
+}
+
 

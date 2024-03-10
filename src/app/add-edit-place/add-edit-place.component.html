@@ -1,0 +1,211 @@
+<div id="formulario">
+  <h2 *ngIf="!data">Añadir un lugar</h2>
+  <h2 *ngIf="data">Modificar un lugar</h2>
+  <form action="" [formGroup]="placeForm" (ngSubmit)="submitPlaceForm()">
+    <mat-dialog-content>
+      <div class="row name">
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Nombre</mat-label>
+          <input id="name" matInput type="text" formControlName="name" />
+          <mat-error *ngIf="placeForm.get('name')?.hasError('required')">
+            Por favor, introduzca un nombre valido
+          </mat-error>
+          <button
+            matSuffix
+            mat-icon-button
+            aria-label="Clear"
+            type="button"
+            (click)="clearInput('name')"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="row resume">
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Resumen</mat-label>
+          <textarea
+            id="observations"
+            matInput
+            type="text"
+            formControlName="resumen"
+            rows="4"
+          ></textarea>
+          <button
+            matSuffix
+            *ngIf="firstNameValue"
+            mat-icon-button
+            aria-label="Clear"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="row images" *ngIf="data">
+        <mat-label>Imagenes</mat-label><br />
+        <div id="imagenes">
+          <div class="imagenes" *ngFor="let image of imagenes">
+            <img class="imgreduced" src="{{ image }}" alt="" />
+            <!-- (click)="eliminarImagen(image)" -->
+          </div>
+        </div>
+
+        <br />
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Imagen 1</mat-label>
+          <input
+            id="img1"
+            matInput
+            type="text"
+            formControlName="img1"
+            [(ngModel)]="imagenes[0]"
+          />
+          <mat-error *ngIf="placeForm.get('img1')?.hasError('required')">
+            Por favor, introduzca un nombre y ruta de imagen
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Imagen 2 </mat-label>
+          <input
+            id="img2"
+            matInput
+            type="text"
+            formControlName="img2"
+            [(ngModel)]="imagenes[1]"
+          />
+          <mat-error *ngIf="placeForm.get('img2')?.hasError('required')">
+            Por favor, introduzca un nombre y ruta de imagen
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Imagen 3 </mat-label>
+          <input
+            id="img3"
+            matInput
+            type="text"
+            formControlName="img3"
+            [(ngModel)]="imagenes[2]"
+          />
+          <mat-error *ngIf="placeForm.get('img3')?.hasError('required')">
+            Por favor, introduzca un nombre y ruta de imagen
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Imagen 4 </mat-label>
+          <input
+            id="img4"
+            matInput
+            type="text"
+            formControlName="img4"
+            [(ngModel)]="imagenes[3]"
+          />
+          <mat-error *ngIf="placeForm.get('img4')?.hasError('required')">
+            Por favor, introduzca un nombre y ruta de imagen
+          </mat-error>
+        </mat-form-field>
+
+        <!-- El input de archivo está oculto -->
+        <!-- <input
+          type="file"
+          #fileInput
+          style="display: none"
+          (change)="onFileSelected($event)"
+        /> -->
+        <!-- Este es tu botón personalizado -->
+        <!-- <button mat-raised-button type="button" (click)="openFileDialog()">
+          Añadir Imagen...
+        </button> -->
+        <!-- Aquí irán un conjunto de imágenes y un botón de añadir nueva -->
+        <!-- <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>Imagenes</mat-label>
+
+      </mat-form-field> -->
+      </div>
+      <div class="row images" *ngIf="!data">
+        <mat-label>Imagenes</mat-label><br />
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Imagen 1</mat-label>
+          <input id="img1" matInput type="text" formControlName="img1" />
+          <mat-error *ngIf="placeForm.get('img1')?.hasError('required')">
+            Por favor, introduzca un nombre y ruta de imagen
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Imagen 2 </mat-label>
+          <input id="img2" matInput type="text" formControlName="img2" />
+          <mat-error *ngIf="placeForm.get('img2')?.hasError('required')">
+            Por favor, introduzca un nombre y ruta de imagen
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Imagen 3 </mat-label>
+          <input id="img3" matInput type="text" formControlName="img3" />
+          <mat-error *ngIf="placeForm.get('img3')?.hasError('required')">
+            Por favor, introduzca un nombre y ruta de imagen
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Imagen 4 </mat-label>
+          <input id="img4" matInput type="text" formControlName="img4" />
+          <mat-error *ngIf="placeForm.get('img4')?.hasError('required')">
+            Por favor, introduzca un nombre y ruta de imagen
+          </mat-error>
+        </mat-form-field>
+        <!-- <div id="imagenes" *ngFor="let image of imagenes">
+          <img
+            class="imgreduced"
+            src="{{ image }}"
+            alt=""
+          /> -->
+        <!-- (click)="eliminarImagen(image)"
+        </div>-->
+        <br />
+
+        <!-- El input de archivo está oculto -->
+        <!-- <input
+          type="file"
+          #fileInput
+          style="display: none"
+          (change)="onFileSelected($event)"
+        /> -->
+        <!-- Este es tu botón personalizado -->
+        <!-- <button mat-raised-button type="button" (click)="openFileDialog()">
+          Añadir Imagen...
+        </button> -->
+        <!-- Aquí irán un conjunto de imágenes y un botón de añadir nueva -->
+        <!-- <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>Imagenes</mat-label>
+
+      </mat-form-field> -->
+      </div>
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+      <button mat-button mat-dialog-close>Cancelar</button>
+      <button
+        mat-button
+        mat-stroked-button
+        color="primary"
+        mat-dialog-close
+        cdkFocusInitial
+        type="submit"
+        [disabled]="placeForm.invalid"
+        *ngIf="data"
+      >
+        Modificar
+      </button>
+      <button
+        mat-button
+        mat-stroked-button
+        color="primary"
+        mat-dialog-close
+        cdkFocusInitial
+        type="submit"
+        [disabled]="placeForm.invalid"
+        *ngIf="!data"
+      >
+        Guardar
+      </button>
+    </mat-dialog-actions>
+  </form>
+</div>

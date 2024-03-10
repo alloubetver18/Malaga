@@ -59,13 +59,99 @@
   </mat-grid-list>
 
   <section id="info">
-    <h2>
+    <h2 *ngIf="placeInfo.valoracion > 0">
       Puntuación media: {{ placeInfo.valoracion }}
       <mat-icon class="color-valorar">star</mat-icon>
+    </h2>
+
+    <h2 *ngIf="placeInfo.valoracion == 0">
+      Puntuación media: No Valorado
+      <mat-icon class="color-no-valorado">star</mat-icon>
     </h2>
 
     <h2>Acerca de este lugar</h2>
 
     <p id="parrafo">{{ placeInfo.resumen }}</p>
+  </section>
+
+  <section id="valoraciones">
+    <!-- Si hay usuario logueado y NO ha dejado opinión, se muestra un formulario -->
+    <div
+      id="formularioValorar"
+      *ngIf="
+        hayUsuarioLogueado &&
+        !hayValoracionUsuario &&
+        rolUsuario != 'administrador'
+      "
+    >
+      <h3>Dejar una opinión sobre este lugar</h3>
+      <!-- Crear un formulario con un submit para guardar la valoración. -->
+      <form action="" [formGroup]="ratingForm" (ngSubmit)="saveRating()">
+        <mat-label>Valoración</mat-label>
+        <mat-form-field appearance="outline">
+          <mat-select id="rate" formControlName="rate">
+            <mat-option value="1"> 1 </mat-option>
+            <mat-option value="2"> 2 </mat-option>
+            <mat-option value="3"> 3 </mat-option>
+            <mat-option value="4"> 4 </mat-option>
+            <mat-option value="5"> 5 </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Describe tu opinión</mat-label>
+          <textarea
+            id="comment"
+            formControlName="comment"
+            matInput
+            type="text"
+            rows="4"
+          ></textarea>
+        </mat-form-field>
+        <mat-dialog-actions>
+          <!-- <button mat-button>Limpiar</button> -->
+          <button
+            mat-button
+            mat-stroked-button
+            color="primary"
+            cdkFocusInitial
+            type="submit"
+          >
+            Enviar
+          </button>
+        </mat-dialog-actions>
+      </form>
+    </div>
+    <!-- Si hay usuario logueado y SI ha dejado opinión, esta se muestra -->
+    <div
+      id="opinionUsuarioActual"
+      *ngIf="hayUsuarioLogueado && hayValoracionUsuario"
+    >
+      <h2>
+        Valoración del usuario {{ usuarioActual }}:
+        {{ valoracionUsuarioAMostrar.rate }}
+        <mat-icon class="color-valorar">star</mat-icon>
+      </h2>
+      <h2>{{ usuarioActual }} dijo:</h2>
+      <p>{{ valoracionUsuarioAMostrar.comment }}</p>
+    </div>
+    <!-- En cualquier caso, se muestran todas las opiniones, de haberlas -->
+    <div id="otrasValoraciones">
+      <h3>Valoraciones y opiniones de los usuarios.</h3>
+      <div *ngIf="hayValoracionesLugar">
+        <div class="valoraciones" *ngFor="let valoracion of arrayValoraciones">
+          <p>
+            {{ valoracion.id_user }}:
+            {{ valoracion.rate }}
+            <mat-icon class="color-valorar">star</mat-icon>
+          </p>
+          <p>{{ valoracion.comment }}</p>
+        </div>
+      </div>
+      <div *ngIf="!hayValoracionesLugar">
+        <h4>
+          No existen valoraciones para este lugar. Se el primero en dejarla.
+        </h4>
+      </div>
+    </div>
   </section>
 </main>

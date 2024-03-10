@@ -1,1 +1,212 @@
-<p>registro works!</p>
+<div id="formulario">
+  <h2 mat-dialog-title>Registro de Usuario</h2>
+  <form action="" [formGroup]="regForm" (ngSubmit)="submitRegForm()">
+    <mat-dialog-content>
+      <div class="row firstName-lastName">
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Nombre</mat-label>
+          <input
+            id="firstName"
+            matInput
+            type="text"
+            formControlName="firstName"
+          />
+          <mat-error *ngIf="regForm.get('firstName')?.hasError('required')">
+            Por favor, introduzca un nombre válido
+          </mat-error>
+          <button
+            matSuffix
+            mat-icon-button
+            aria-label="Clear"
+            type="button"
+            (click)="clearInput('firstName')"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Apellidos</mat-label>
+          <input
+            id="lastName"
+            matInput
+            type="text"
+            formControlName="lastName"
+          />
+          <mat-error *ngIf="regForm.get('lastName')?.hasError('required')">
+            Por favor, introduzca un apellido válido
+          </mat-error>
+          <button
+            matSuffix
+            mat-icon-button
+            aria-label="Clear"
+            type="button"
+            (click)="clearInput('lastName')"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+          <!-- <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button> -->
+        </mat-form-field>
+      </div>
+      <div class="row date-email">
+        <mat-form-field appearance="outline">
+          <mat-label>Fecha de Nacimiento</mat-label>
+          <input
+            id="birthdate"
+            matInput
+            [matDatepicker]="picker"
+            formControlName="birthdate"
+          />
+          <mat-error *ngIf="regForm.get('birthdate')?.hasError('required')">
+            Por favor, selecciona una fecha
+          </mat-error>
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle
+            matIconSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input id="email" matInput type="text" formControlName="email" />
+          <mat-error *ngIf="regForm.get('email')?.hasError('required')">
+            Por favor, introduce un email
+          </mat-error>
+          <mat-error
+            *ngIf="
+              !regForm.get('email')?.hasError('required') &&
+              regForm.get('email')?.hasError('email')
+            "
+          >
+            Por favor, introduce un email válido
+          </mat-error>
+          <button
+            matSuffix
+            mat-icon-button
+            aria-label="Clear"
+            type="button"
+            (click)="clearInput('email')"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="row telephone-province">
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Teléfono</mat-label>
+          <input
+            id="telephone"
+            matInput
+            type="text"
+            formControlName="telephone"
+          />
+          <mat-error *ngIf="regForm.get('telephone')?.hasError('required')">
+            Por favor, introduce un teléfono
+          </mat-error>
+          <button
+            matSuffix
+            mat-icon-button
+            aria-label="Clear"
+            type="button"
+            (click)="clearInput('telephone')"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Comunidad de origen</mat-label>
+          <mat-select id="community" formControlName="community">
+            <mat-option
+              *ngFor="let community of communities"
+              [value]="community"
+            >
+              {{ community }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="regForm.get('province')?.hasError('required')">
+            Por favor, selecciona una provincia
+          </mat-error>
+        </mat-form-field>
+        <!-- <p>Selected food: {{ provinces }}</p> -->
+      </div>
+      <div class="row gender">
+        <mat-label>Género</mat-label>
+        <mat-radio-group aria-label="Elija su género" formControlName="gender">
+          <mat-radio-button value="1">Masculino</mat-radio-button>
+          <mat-radio-button value="2">Femenino</mat-radio-button>
+          <mat-radio-button value="3">Otro</mat-radio-button>
+        </mat-radio-group>
+        <mat-error
+          *ngIf="
+            regForm.get('gender')?.hasError('required') &&
+            regForm.get('gender')?.touched
+          "
+        >
+          Por favor, selecciona un sexo
+        </mat-error>
+      </div>
+      <div class="row passw">
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Contraseña</mat-label>
+          <input id="passw" matInput type="password" formControlName="passw" />
+          <mat-error *ngIf="regForm.get('passw')?.hasError('required')">
+            Por favor, Introduce una contraseña
+          </mat-error>
+          <button
+            matSuffix
+            *ngIf="firstNameValue"
+            mat-icon-button
+            aria-label="Clear"
+            (click)="clearInput('passw')"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="outline">
+          <mat-label>Repetir Contraseña</mat-label>
+          <input
+            id="repeatpassw"
+            matInput
+            type="password"
+            formControlName="repeatpassw"
+          />
+          <mat-error *ngIf="regForm.get('repeatpassw')?.hasError('required')">
+            Por favor, Introduce una contraseña
+          </mat-error>
+          <mat-error
+            *ngIf="
+              !regForm.get('repeatpassw')?.hasError('required') &&
+              regForm.get('repeatpassw')?.value != regForm.get('passwd')?.value
+            "
+          >
+            Por favor, Introduce una contraseña idéntica a la anterior.
+          </mat-error>
+          <button
+            matSuffix
+            *ngIf="firstNameValue"
+            mat-icon-button
+            aria-label="Clear"
+            (click)="clearInput('repeatpassw')"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+      <button
+        mat-button
+        mat-stroked-button
+        color="primary"
+        cdkFocusInitial
+        type="submit"
+        [disabled]="regForm.invalid"
+      >
+        Registrar
+      </button>
+    </mat-dialog-actions>
+  </form>
+</div>

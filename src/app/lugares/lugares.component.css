@@ -1,3 +1,16 @@
+.bienvenido{
+  width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+h1, h2{
+  text-align: center;
+}
+
+p{
+  text-align: justify;
+}
+
 .example-card {
   width: 30%;
 }
@@ -35,7 +48,7 @@ mat-card{
 }
 
 .color-valorar{
-  color: yellow;
+  color: goldenrod;
 }
 
 .color-no-valorado{
